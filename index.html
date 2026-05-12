@@ -1,574 +1,419 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Cache-control" content="public">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="google-site-verification" content="4B-bcR-YTOJh9DVErCFuXzyRTgaX0ve5qEhmZ40tSU0" />
-    <title>Kundan Chauhan</title>
-
-    <meta name="description" content="Portoflio website of Kundan Chauhan. Check it out!">
-    <meta name="keywords"
-        content="Kundan, Kundan26, Kundans, Kundan Portfolio, Kundan, Kundan Chauhan, Kundan_chauhan Portfolio, Kundan Chauhan Portfolio">
-    <meta name="author" content="Kundan Chauhan">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#FFFFFF">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Kundan's Portfolio">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta property="og:image" content="assets/img/logo.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
-    <!-- Service Worker Registration -->
-    <script type="text/javascript">
-        // Initialize the service worker
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
-                // Registration was successful
-                console.log('portfolio-progressive-web-app: ServiceWorker registration successful');
-            }, function (err) {
-                // registration failed :(
-                console.log('portfolio-progressive-web-app: ServiceWorker registration failed: ', err);
-            });
-        }
-
-    </script>
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/logo.png" rel="apple-touch-icon">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins&display=swap" rel="stylesheet">
-
-    <link href="stylesheet/extern/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="stylesheet/extern/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="stylesheet/extern/aos.css" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC6WQ9SXXE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-GC6WQ9SXXE');
-    </script>
-    <!-- Template Main CSS File -->
-    <link href="stylesheet/preload.css" rel="stylesheet">
-    <link href="stylesheet/nav.css" rel="stylesheet">
-    <link href="stylesheet/scroll.css" rel="stylesheet">
-    <link href="stylesheet/style.css" rel="stylesheet">
-    <link href="stylesheet/footer.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundan Chauhan | Senior Python Developer</title>
+    <meta name="description" content="Portfolio of Kundan Chauhan, Senior Python Developer specializing in Django, FastAPI, and scalable backend systems.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Nav Bar -->
-    <div id="img-holder"></div>
-    <div id="central">
-        <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-        <header id="header" class="d-flex flex-column justify-content-center">
-            <nav class="nav-menu">
-                <ul>
-                    <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-                    <li><a href="#skills"><i class="icofont-gears"></i><span>Skills</span></a></li>
-                    <li><a href="#achieve"><i class='bx bxs-trophy'></i><span>Achievements</span></a></li>
-                    <li><a href="#facts"><i class='bx bxs-report'></i><span>Stats</span></a></li>
-                    <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-                    <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+
+    <!-- Header / Navbar -->
+    <header id="header" class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">KC<span>.</span></a>
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-
-        <!-- Main Section -->
-        <section id="hero" class="d-flex flex-column justify-content-center fader">
-            <div class="container" data-aos="zoom-in" data-aos-delay="100">
-                <h3>Hi there!</h3>
-                <p>This is
-                <h1>Kundan Chauhan</h1>
-                </p>
-                <p>A <span class="typed"
-                        data-typed-items="Python Developer, Django Developer, ML Engineer, Video Editors, Open Source Enthusiast"></span>
-                </p>
-                <div class="social-links">
-                    <a href="https://twitter.com/kundan__chauhan" target="_blank" rel="noreferrer" class="twitter"><i
-                            class="bx bxl-twitter"></i></a>
-                    <a href="https://github.com/kundanchauhan" class="github" target="_blank" rel="noreferrer"><i
-                            class="bx bxl-github"></i></a>
-                    <a href="https://www.linkedin.com/in/Kundan26/" class="linkedin" target="_blank"
-                        rel="noreferrer"><i class="bx bxl-linkedin"></i></a>
+            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class='bx bx-sun'></i>
+                </button>
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <i class='bx bx-menu'></i>
                 </div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <main id="main">
-            <!-- About -->
-            <section id="about" class="about pt-5">
-                <div class="container" data-aos="fade-up">
-                    <div class="section-title p-3">
-                        <h2>About</h2>
-                        <div class="row">
-                            <p class="intro">
-                                Experienced Python Developer offering 3+ years of extensive experience and exceptional analytical and critical thinking skills.
-                                I'm a tech-savvy and ambitious person striving to make a difference.
-                            </p>
-                        </div>
-                        <div class="row mt-5 straight">
-                            <div class="col-lg-7 d-flex align-items-center gayab">
-                                <div class="container img-container">
-                                    <img src="assets/img/portfolio/name_thumb.jpeg" alt="Name" class="name" height="300"
-                                        width="300">
-                                </div>
-                            </div>
-                            <div class="col-lg-5 p-3 aboutme">
-                                <h5>Full Name : </h5> Kundan Chauhan
-                                <h5>Date of Birth : </h5> 1996
-                                <h5>Education : </h5> Msc (Pursuing)
-                                <h5>Field of Study : </h5> Computer Science
-                                <div class="link-holder my-4">
-                                    <a href="https://drive.google.com/file/d/1835bTA_1WgSbwjO7lDtdXHV2PbL_bVKo/view?usp=share_link"
-                                        target="_blank" rel="noreferrer">
-                                        <h5>View my Resume</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Kundan Chauhan</h1>
+                <h2 class="title">I am a <span class="typing-text"></span></h2>
+                <p class="description">
+                    Senior Python Developer with 6+ years of experience designing and building scalable, high-performance backend systems. Expertise in Python, Django, DRF, and FastAPI.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="resume.pdf" class="btn btn-secondary" target="_blank" download>Download Resume <i class='bx bx-download'></i></a>
                 </div>
-            </section>
-
-            <!-- Skills -->
-            <section id="skills" class="skills section-bg">
-                <div class="container p-3" data-aos="fade-up">
-                    <div class="section-title">
-                        <h2>Skills</h2>
-                    </div>
-                    <div class="section-title my-4">
-                        <p>I always had a knack for learning about new stuff. Over the past three years, I've ventured
-                            into Fintech fields that fascinated me
-                            From working extensively on Web Development using Django to Machine Learning.
-                            <br>
-                            Speaking of now, I'm exporing the awe-inspiring and beautiful world of Data Science.
-                        </p>
-                    </div>
-
-                    <div class="row skills-content mt-5">
-                        <div class="col-lg-6">
-                            <div class="progress">
-                                <span class="skill">Python <i class="val">80%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <span class="skill">Django <i class="val">90%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <span class="skill">Django REST framework <i class="val">75%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow=75 aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="progress">
-                                <span class="skill">Tensorflow <i class="val">60%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="progress">
-                                <span class="skill">OpenCV <i class="val">55%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="progress">
-                                <span class="skill">Image Processing <i class="val">60%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!-- Achievements -->
-            <section id="achieve" class="about pt-5">
-                <div class="container" data-aos="fade-up">
-                    <div class="section-title p-3">
-                        <h2>Achievements</h2>
-                        <div class="row">
-                            <div class="col-12 p-3 roll">
-                                <h5>Got excellence award in Man Investment Services Private Limited, one given for extraordinary performance in
-                                    a quarter<br>2022</h5>
-                                <h5>Ranked Amongst Top 32 in HCL Better Health Hackathon <br>2020</h5>
-                                <h5>Participated in IIT Bombay coding fest world programming championship <br>2018</h5>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Facts -->
-            <section id="facts" class="facts">
-                <div class="container p-3" data-aos="fade-up">
-                    <div class="section-title">
-                        <h2>Statistics</h2>
-                        <p>
-                            Here are some of the stats related to my projects and work.
-                        </p>
-                    </div>
-
-                    <div class="row mt-5">
-                        <div class="col-6 col-lg-3">
-                            <div class="count-box">
-                                <i class="bx bxl-github"></i>
-                                <span data-toggle="counter-up">12</span>
-                                <p>Git Repositories</p>
-                            </div>
-                        </div>
-
-                        <div class="col-6 col-lg-3">
-                            <div class="count-box">
-                                <i class='bx bxs-checkbox-checked'></i>
-                                <span data-toggle="counter-up">1</span>
-                                <p>Projects</p>
-                                <p>(Total)</p>
-                            </div>
-                        </div>
-
-                        <div class="col-6 col-lg-3">
-                            <div class="count-box">
-                                <i class='bx bx-toggle-right'></i>
-                                <span data-toggle="counter-up">1</span>
-                                <p>Active Projects</p>
-                            </div>
-                        </div>
-
-                        <div class="col-6 col-lg-3">
-                            <div class="count-box">
-                                <i class="icofont-users-alt-5"></i>
-                                <span style="display: inline;" data-toggle="counter-up">8</span><span
-                                    style="display: inline;">&nbsp;+</span>
-                                <p>Contributions and Counting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Portfolio -->
-            <section id="portfolio" class="portfolio section-bg pb-3">
-                <div class="container p-3" data-aos="fade-up">
-
-                    <div class="section-title mb-2">
-                        <h2>Portfolio</h2>
-                        <p>
-                            Here's a summary of the various projects and events I've been a part of over the past one
-                            year.
-                            Original images are attached in the description of these projects. Just Tap!.
-                        </p>
-                    </div>
-
-                    <div class="row mt -4">
-                        <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                            <ul id="portfolio-flters">
-                                <li data-filter="*" class="filter-active">All</li>
-                                <li data-filter=".filter-web">Web</li>
-                                <li data-filter=".filter-ml">ML</li>
-                                <li data-filter=".filter-misc">Misc.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                        <!-- Workshop -->
-                        <!-- <div class="col-lg-6 col-md-6 portfolio-item filter-ml">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/portfolio-1.jpeg" class="img-fluid pimg" alt=""
-                                    height="658" width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>IoT Workshop</h4>
-                                    <p>Arduino, IoT</p>
-                                    <hr>
-                                    <p>A Workshop held for freshers introducing them to the amazing world of Arduino and
-                                        IoT.</p>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- IoT -->
-                        <!-- <div class="col-lg-6 col-md-6 portfolio-item filter-ml filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/img3.jpeg" class="img-fluid pimg" alt="" height="312"
-                                    width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>IoT Platform</h4>
-                                    <p>Django, Socket Programming</p>
-                                    <hr>
-                                    <p>An advanced web portal to enable real time communication between various
-                                        IoT projects securely.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/KundansSh/Platform" target="_blank"
-                                            rel="noreferrer"><i class="bx bxl-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        
-                         <div class="col-lg-6 col-md-6 portfolio-item filter-ml filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/salary-prediction.jpg" class="img-fluid pimg" alt="" height="312"
-                                    width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>Employee salary prediction</h4>
-                                    <p>ML</p>
-                                    <hr>
-                                    <p>An advanced web portal to enable real time communication between various
-                                        IoT projects securely.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/kundanchauhan/employee-salary-prediction" target="_blank"
-                                            rel="noreferrer"><i class="bx bxl-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-
-
-                        <!-- E Com -->
-                        <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/api-blog.png" class="img-fluid pimg" alt="" height="360"
-                                    width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>Blog API</h4>
-                                    <p>django rest framework</p>
-                                    <hr>
-                                    <p> Blog API built using Django and django rest framework. The website displays All blog post, specify blog and many more. Users can create an account using JWT Authentication. Blog API use Postgresql as database.
-                                    </p>
-                                    <div class="portfolio-links">
-                                        <!-- <a href="assets/img/portfolio/api-blog.png" data-gall="portfolioGallery"
-                                            class="venobox" title="ecom"><i class="bx bxs-image"></i></a> -->
-                                        <a href="https://github.com/kundanchauhan/blog-api" target="_blank"
-                                            rel="noreferrer"><i class="bx bxl-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/ecom.jpg" class="img-fluid pimg" alt="" height="360"
-                                    width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>E Commerce Website</h4>
-                                    <p>Django</p>
-                                    <hr>
-                                    <p>Virtual space for shops in COVID scenario.Simple and Smooth UI with ease of use.
-                                    </p>
-                                    <div class="portfolio-links">
-                                        <!-- <a href="assets/img/portfolio/img2.jpeg" data-gall="portfolioGallery"
-                                            class="venobox" title="ecom"><i class="bx bxs-image"></i></a> -->
-                                        <a href="https://github.com/kundanchauhan/Ecommerce" target="_blank"
-                                            rel="noreferrer"><i class="bx bxl-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/text-utiles.jpg" class="img-fluid pimg" alt="" height="360"
-                                    width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>Textutils Website</h4>
-                                    <p>Django</p>
-                                    <hr>
-                                    <p>Recon Utility is a Python web application. Simple and Smooth UI with ease of use.
-                                    </p>
-                                    <div class="portfolio-links">
-                                        <!-- <a href="assets/img/portfolio/img2.jpeg" data-gall="portfolioGallery"
-                                            class="venobox" title="ecom"><i class="bx bxs-image"></i></a> -->
-                                        <a href="https://github.com/kundanchauhan/ReconTextutils" target="_blank"
-                                            rel="noreferrer"><i class="bx bxl-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/file_share.jpg" class="img-fluid pimg" alt="" height="360"
-                                    width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>File share application</h4>
-                                    <p>Django</p>
-                                    <hr>
-                                    <p>File Share Application is a Python web application. Simple and Smooth UI with ease of use.
-                                    </p>
-                                    <div class="portfolio-links">
-                                        <!-- <a href="assets/img/portfolio/img2.jpeg" data-gall="portfolioGallery"
-                                            class="venobox" title="ecom"><i class="bx bxs-image"></i></a> -->
-                                        <a href="https://github.com/kundanchauhan/File-share-application" target="_blank"
-                                            rel="noreferrer"><i class="bx bxl-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                     
-                        <!-- VPen -->
-                        <!-- <div class="col-lg-6 col-md-6 portfolio-item filter-misc">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/img_surface-pro.jpeg" class="img-fluid pimg" alt=""
-                                    height="300" width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>Virtual Pen</h4>
-                                    <p>OpenCV</p>
-                                    <p>Alpha Stage</p>
-                                    <hr>
-                                    <p>
-                                        An OpenCV based object tracker to write virtually. Supports multiple colors.
-                                    </p>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/vpen.jpeg" data-gall="portfolioGallery"
-                                            class="venobox" title="Virtual Pen"><i class="bx bxs-image"></i></a>
-                                        <a href="https://github.com/KundansSh/Virtual_Pen" target="_blank"
-                                            rel="noreferrer"><i class="bx bxl-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  --> 
-                        <!-- Shirt -->
-                        
-                        <!-- <div class="col-lg-6 col-md-6 portfolio-item filter-ml">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/shirt.jpg" class="img-fluid pimg" alt="" height="359"
-                                    width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>Smart Health T-Shirt</h4>
-                                    <p>IoT</p>
-                                    <p>Under Development</p>
-                                    <hr>
-                                    <p>
-                                        An IoT powered Smart T-Shirt to monitor and track the health status of
-                                        individuals.
-                                    </p>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- Blender -->
-                        <!-- <div class="col-lg-6 col-md-6 portfolio-item filter-misc">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/Doughnut_last.jpeg" class="img-fluid pimg" alt=""
-                                    height="267" width="539" loading="lazy">
-                                <div class="portfolio-info">
-                                    <h4>3D Donut</h4>
-                                    <p>Blender</p>
-                                    <hr>
-                                    <p>
-                                        Render Blender !!!
-                                    </p>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/Teddy.jpeg" data-gall="portfolioGallery"
-                                            class="venobox" title="Teddy"><i class="bx bxs-image"></i></a>
-                                        <a href="https://github.com/KundansSh/Blender_Models" target="_blank"
-                                            rel="noreferrer"><i class="bx bxl-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact Me! -->
-            <section id="contact" class="contact py-5">
-                <div class="container p-3" data-aos="fade-up">
-
-                    <div class="section-title">
-                        <h2>Contact Me</h2>
-                        <p>Have some suggestions for me? Or perhaps something else?</p>
-                        <p>Just reach out!</p>
-                    </div>
-                    <div class="mt-5 text-center">
-                        <div class="info row">
-                            <div class="col-lg-4 my-2">
-                                <a href="mailto: kundanlalchauhan@gmail.com" target="_blank" rel="noreferrer"><i
-                                        class="icofont-envelope"></i></a>
-                                <h4>Email:</h4>
-                                <p>kundanlalchauhan@gmail.com</p>
-                            </div>
-                            <div class=" col-lg-4 my-2">
-                                <a href="https://www.google.com/maps/place/Dombivli,+Maharashtra/@19.2093338,73.099582,13z/data=!3m1!4b1!4m5!3m4!1s0x3be7958ef72d8707:0x84bf6ab96e280b08!8m2!3d19.2094006!4d73.0939483"
-                                    target="_blank" rel="noreferrer"><i class="icofont-google-map"></i></a>
-                                <h4>Location:</h4>
-                                <p>Thane, Maharashtra, India</p>
-                            </div>
-                            <div class="col-lg-4 my-2">
-                                <a href="https://www.linkedin.com/in/Kundan26/" class="linkedin"
-                                    target="_blank" rel="noreferrer"><i class="bx bxl-linkedin"></i></a>
-                                <h4>Linkedin</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer id="footer">
-            <div class="container">
-                <p>Designed with <span>Bootstrap</span></p>
                 <div class="social-links">
-                    <a href="https://twitter.com/kundan__chauhan" target="_blank" rel="noreferrer" class="twitter"><i
-                            class="bx bxl-twitter"></i></a>
-                    <a href="https://github.com/kundanchauhan" class="github" target="_blank" rel="noreferrer"><i
-                            class="bx bxl-github"></i></a>
-                    <a href="https://www.linkedin.com/in/kundan26" class="linkedin" target="_blank"
-                        rel="noreferrer"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/kundanchauhan" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://linkedin.com/in/kundan-chauhan" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
                 </div>
             </div>
-        </footer>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="image-wrapper">
+                    <!-- Placeholder image, replace with your actual profile picture -->
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Kundan Chauhan Programming">
+                    <div class="shape-blob"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- End #main -->
-        <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-        <div id="preloader"></div>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                    I am a highly skilled Senior Python Developer with proven ability in architecting microservices, developing high-performance RESTful APIs, optimizing system performance, and delivering secure, enterprise-grade applications.
+                </p>
+                <p>
+                    My expertise spans across SQL and NoSQL databases, and I have a strong background in implementing cybersecurity best practices to ensure system integrity and compliance.
+                </p>
+                
+                <div class="education-block mt-4">
+                    <h3>Education</h3>
+                    <div class="edu-item">
+                        <h4>Master of Computer Science</h4>
+                        <p>K.V Pendharkar College of Arts, Science and Commerce, Dombivli <span>(Jul 2022 – Apr 2024)</span></p>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Bachelor of Science in Information Technology</h4>
+                        <p>Guru Nanak College of Arts, Science and Commerce, Mumbai <span>(Jul 2014 – May 2017)</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Vendor JS Files -->
-        <script src="assets/vendor/jquery/jquery.min.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-        <script src="assets/vendor/counterup/counterup.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script async src="assets/vendor/venobox/venobox.min.js"></script>
-        <script src="stylesheet/extern/owl.carousel/owl.carousel.min.js"></script>
-        <script src="assets/vendor/typed.js/typed.min.js"></script>
-        <script src="stylesheet/extern/aos.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section section-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Technical Skills</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class='bx bxl-python'></i>
+                        <h3>Languages & Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>Django REST Framework</span>
+                        <span>FastAPI</span>
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class='bx bx-data'></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                        <span>MySQL</span>
+                        <span>Redis</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class='bx bx-cloud'></i>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Apache Kafka</span>
+                        <span>Apache NiFi</span>
+                        <span>Microservices</span>
+                        <span>Linux</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class='bx bx-wrench'></i>
+                        <h3>Tools & Specializations</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>REST APIs</span>
+                        <span>Celery</span>
+                        <span>RabbitMQ</span>
+                        <span>Cybersecurity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Template Main JS File -->
-        <script src="js/main.js"></script>
-    </div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Work Experience</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Feb 2023 – present</div>
+                    <div class="timeline-content card-glass">
+                        <h3>Senior Software Engineer</h3>
+                        <h4>Sequretek IT Solutions Pvt. Ltd., Mumbai</h4>
+                        <ul>
+                            <li>Built scalable backend services using Python, Django, and DRF for compliance and vulnerability monitoring platforms.</li>
+                            <li>Integrated CVE databases to automate vulnerability detection and remediation workflows.</li>
+                            <li>Developed REST APIs enabling efficient microservices communication.</li>
+                            <li>Delivered features such as asset discovery, risk scoring, vulnerability scanning, and real-time dashboards.</li>
+                            <li>Optimized SQL queries and Celery background tasks, reducing report generation time by approximately 40%.</li>
+                            <li>Implemented CIS Benchmark–aligned security configurations with zero audit failures.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jul 2022 – Feb 2023</div>
+                    <div class="timeline-content card-glass">
+                        <h3>Software Engineer</h3>
+                        <h4>GMoney Private Limited, Mumbai</h4>
+                        <ul>
+                            <li>Developed APIs for DPD tracking to help merchants evaluate customer creditworthiness.</li>
+                            <li>Implemented E-NACH auto-debit functionality for automated payment processing.</li>
+                            <li>Built EMI reminder system with automatic payment link sharing.</li>
+                            <li>Developed the Claim Tracker system used by doctors, hospital staff, and relationship managers.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">May 2021 – Jul 2022</div>
+                    <div class="timeline-content card-glass">
+                        <h3>Software Engineer</h3>
+                        <h4>Man Investment Services Private Limited, Mumbai</h4>
+                        <ul>
+                            <li>Contributed to a B2B Invoice Discounting Platform enabling businesses to access short-term funding.</li>
+                            <li>Built web applications using Django, HTML, CSS, JavaScript, and Bootstrap.</li>
+                            <li>Integrated libraries such as xhtml2pdf, django-filter, requests, and xlsxwriter for reporting.</li>
+                            <li>Developed a product filtering system with multiple filters, pagination, and sorting.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2020 – May 2021</div>
+                    <div class="timeline-content card-glass">
+                        <h3>Junior Python Developer</h3>
+                        <h4>AllInCall Research and Solution Private Limited, Mumbai</h4>
+                        <ul>
+                            <li>Integrated chatbots using REST APIs across WhatsApp, Alexa, Google Assistant, Facebook, and websites.</li>
+                            <li>Developed backend systems using Python, Django, Django REST Framework, PostgreSQL, and Celery.</li>
+                            <li>Performed bug fixing, debugging, and deployment activities.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section section-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Portfolio</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">A showcase of some of my key projects.</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-filters-wrapper">
+                    <ul id="portfolio-filters" class="portfolio-filters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-django">Django</li>
+                        <li data-filter=".filter-api">API/Backend</li>
+                        <li data-filter=".filter-ml">Machine Learning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="200">
+                
+                <!-- Project 1 -->
+                <div class="portfolio-item card-glass filter-django filter-api">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=600&q=80" alt="Textutils Web Application">
+                        <div class="portfolio-overlay">
+                            <a href="https://github.com/kundanchauhan/ReconTextutils" target="_blank" class="portfolio-link"><i class='bx bx-link-external'></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Textutils Web Application</h4>
+                        <p class="tech-stack">Django, Python</p>
+                        <p class="desc">A Django-based text processing and PDF utility tool. Features include text cleaning, formatting, PDF merge, compress, lock, and unlock operations with secure file handling.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item card-glass filter-django filter-api">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="E-commerce Web Application">
+                        <div class="portfolio-overlay">
+                            <a href="https://github.com/kundanchauhan/Ecommerce" target="_blank" class="portfolio-link"><i class='bx bx-link-external'></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>E-commerce Web Application</h4>
+                        <p class="tech-stack">Django, Python</p>
+                        <p class="desc">Full-stack e-commerce platform with product listing, search, cart, checkout, order management, and a comprehensive admin dashboard.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item card-glass filter-ml">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Employee Salary Prediction">
+                        <div class="portfolio-overlay">
+                            <a href="https://github.com/kundanchauhan/employee-salary-prediction" target="_blank" class="portfolio-link"><i class='bx bx-link-external'></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Employee Salary Prediction</h4>
+                        <p class="tech-stack">Machine Learning, Python</p>
+                        <p class="desc">An ML-based web application to predict employee salaries based on various factors and historical data.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item card-glass filter-django filter-api">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Blog API">
+                        <div class="portfolio-overlay">
+                            <a href="https://github.com/kundanchauhan/blog-api" target="_blank" class="portfolio-link"><i class='bx bx-link-external'></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Blog API</h4>
+                        <p class="tech-stack">Django REST Framework, PostgreSQL</p>
+                        <p class="desc">Blog API built using Django and DRF. Supports JWT Authentication, post creation, and viewing specific blogs with PostgreSQL backend.</p>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item card-glass filter-django">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1614064641913-6b71a3061145?auto=format&fit=crop&w=600&q=80" alt="File Share Application">
+                        <div class="portfolio-overlay">
+                            <a href="https://github.com/kundanchauhan/File-share-application" target="_blank" class="portfolio-link"><i class='bx bx-link-external'></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>File Share Application</h4>
+                        <p class="tech-stack">Django, Python</p>
+                        <p class="desc">A Python web application for sharing files securely. Simple and Smooth UI with ease of use.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Interested in working together? Drop me a message!</p>
+            </div>
+
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info card-glass">
+                    <h3>Contact Information</h3>
+                    <p>Open for opportunities and collaborations. Feel free to reach out using the form or through my professional networks.</p>
+                    
+                    <div class="info-item">
+                        <i class='bx bx-map'></i>
+                        <div>
+                            <h4>Location:</h4>
+                            <p>Mumbai, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-contact mt-4">
+                        <a href="https://github.com/kundanchauhan" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://linkedin.com/in/kundan-chauhan" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper card-glass">
+                    <!-- Note: Replace "YOUR_FORMSPREE_ID" with your actual Formspree endpoint -->
+                    <form action="https://formspree.io/f/xdabbjyn" method="POST" class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5" required placeholder="Hello Kundan..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Send Message <i class='bx bx-send'></i></button>
+                        <p class="form-status" id="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="logo">KC<span>.</span></a>
+                <p>&copy; <span id="current-year"></span> Kundan Chauhan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
