@@ -1098,6 +1098,7 @@
       background: linear-gradient(135deg, rgba(0, 245, 212, 0.04) 0%, rgba(139, 92, 246, 0.04) 100%);
       opacity: 0;
       transition: opacity var(--transition);
+      pointer-events: none;
     }
 
     .project-card:hover {
@@ -1158,6 +1159,8 @@
     .project-links {
       display: flex;
       gap: 12px;
+      position: relative;
+      z-index: 10;
     }
 
     .proj-link {
